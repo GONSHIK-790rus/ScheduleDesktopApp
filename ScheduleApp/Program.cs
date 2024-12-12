@@ -6,7 +6,7 @@ namespace ScheduleApp {
         [STAThread]
         static void Main() {
             ApplicationConfiguration.Initialize();
-            Application.Run(new EntryForm());
+            Application.Run(new MainForm());
         }
     }
 }
