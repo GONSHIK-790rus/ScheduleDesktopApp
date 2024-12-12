@@ -94,6 +94,7 @@
             FormBorderStyle = FormBorderStyle.None;
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "RegisterForm";
+            StartPosition = FormStartPosition.CenterScreen;
             Tag = "Register";
             Text = "RegisterForm";
             Panel_TopControlBox.ResumeLayout(false);

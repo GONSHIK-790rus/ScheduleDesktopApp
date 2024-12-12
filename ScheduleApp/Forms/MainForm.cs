@@ -17,7 +17,7 @@ namespace ScheduleApp {
             FillFormsList();
         }
 
-        private readonly List<Form> _formsList = [];
+        private List<Form> _formsList = [];
         private void FillFormsList() {
             _formsList.Add( EntryForm.GetEntryForm() );
             _formsList.Add( RegisterForm.GetRegisterForm() );
@@ -34,6 +34,7 @@ namespace ScheduleApp {
         }
 
         private void Button_Click(object sender, EventArgs e) {
+            FillFormsList();
             Guna2GradientButton? clickedButton = sender as Guna2GradientButton;
             OpenNewWindow( clickedButton.Tag.ToString() );
         }

@@ -10,8 +10,12 @@
         }
 
         private void Button_Exit_Click(object sender, EventArgs e) {
-            Close();
+            Hide();
             MainForm.AllFormsClosed();
+        }
+
+        private void Button_Enter_Click(object sender, EventArgs e) {
+
         }
     }
 }
