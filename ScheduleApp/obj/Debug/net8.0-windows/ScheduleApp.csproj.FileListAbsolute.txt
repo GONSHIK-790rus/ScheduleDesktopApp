@@ -146,3 +146,4 @@ C:\Users\Redmi\source\repos\ScheduleApp\ScheduleApp\obj\Debug\net8.0-windows\Sch
 C:\Users\Redmi\source\repos\ScheduleApp\ScheduleApp\obj\Debug\net8.0-windows\ref\ScheduleApp.dll
 C:\Users\Redmi\source\repos\ScheduleApp\ScheduleApp\obj\Debug\net8.0-windows\ScheduleApp.EntryForm.resources
 C:\Users\Redmi\source\repos\ScheduleApp\ScheduleApp\obj\Debug\net8.0-windows\ScheduleApp.Forms.RegisterForm.resources
+C:\Users\Redmi\source\repos\ScheduleApp\ScheduleApp\obj\Debug\net8.0-windows\ScheduleApp.sourcelink.json

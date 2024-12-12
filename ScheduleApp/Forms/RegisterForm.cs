@@ -1,20 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-
-namespace ScheduleApp.Forms
-{
+﻿namespace ScheduleApp.Forms {
     public partial class RegisterForm : Form
     {
-        public RegisterForm()
+        private static RegisterForm? _registerForm;
+        public static RegisterForm GetRegisterForm()
+        {
+            return _registerForm ??= new RegisterForm();
+        }
+
+        private RegisterForm()
         {
             InitializeComponent();
+        }
+
+        private void Button_Exit_Click(object sender, EventArgs e) {
+            Close();
+            MainForm.AllFormsClosed();
         }
     }
 }

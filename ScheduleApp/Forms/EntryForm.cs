@@ -1,24 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-
-namespace ScheduleApp {
+﻿namespace ScheduleApp {
     public partial class EntryForm : Form {
-        private static EntryForm form = new();
+        private static EntryForm? _entryForm;
         public static EntryForm GetEntryForm() {
-            if (form == null)
-                form = new EntryForm();
-            return form;
+            return _entryForm ??= new EntryForm();
         }
 
         private EntryForm() {
             InitializeComponent();
+        }
+
+        private void Button_Exit_Click(object sender, EventArgs e) {
+            Close();
+            MainForm.AllFormsClosed();
         }
     }
 }

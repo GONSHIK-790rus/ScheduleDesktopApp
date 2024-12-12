@@ -1,22 +1,40 @@
+using Guna.UI2.WinForms;
+using ScheduleApp.Forms;
+
 namespace ScheduleApp {
     public partial class MainForm : Form {
-        public MainForm() {
-            InitializeComponent();
+        public static void AllFormsClosed() {
+            _mainForm?.Show();
         }
 
-        private readonly EntryForm entryForm = EntryForm.GetEntryForm();
+        private static MainForm? _mainForm;
+        public static MainForm GetMainForm() {
+            return _mainForm ??= new MainForm();
+        }
+
+        private MainForm() {
+            InitializeComponent();
+            FillFormsList();
+        }
+
+        private readonly List<Form> _formsList = [];
+        private void FillFormsList() {
+            _formsList.Add( EntryForm.GetEntryForm() );
+            _formsList.Add( RegisterForm.GetRegisterForm() );
+        }
+
         private void OpenNewWindow(string tag) {
-            if (tag == entryForm.Tag.ToString()) { 
-                entryForm.Show();
-                Close();
-                return;
+            for (int i = 0; i < _formsList.Count; i++) {
+                if (tag == _formsList[i].Tag.ToString()) {
+                    _formsList[i].Show();
+                    Hide();
+                    break;
+                }
             }
-
-
         }
 
         private void Button_Click(object sender, EventArgs e) {
-            Button? clickedButton = sender as Button;
+            Guna2GradientButton? clickedButton = sender as Guna2GradientButton;
             OpenNewWindow( clickedButton.Tag.ToString() );
         }
     }
