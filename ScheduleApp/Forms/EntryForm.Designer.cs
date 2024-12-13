@@ -40,11 +40,12 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EntryForm));
             Button_Minimize = new Guna.UI2.WinForms.Guna2ControlBox();
             Button_Exit = new Guna.UI2.WinForms.Guna2ControlBox();
             Panel_TopControlBox = new Panel();
             PictureBox_MainPicture = new Guna.UI2.WinForms.Guna2PictureBox();
-            Label_Welcome = new Label();
+            Label_WelcomeBack = new Label();
             TextBox_Login = new Guna.UI2.WinForms.Guna2TextBox();
             TextBox_Password = new Guna.UI2.WinForms.Guna2TextBox();
             Button_Enter = new Guna.UI2.WinForms.Guna2GradientButton();
@@ -111,17 +112,17 @@
             PictureBox_MainPicture.TabIndex = 3;
             PictureBox_MainPicture.TabStop = false;
             // 
-            // Label_Welcome
+            // Label_WelcomeBack
             // 
-            Label_Welcome.AutoSize = true;
-            Label_Welcome.Font = new Font("Montserrat SemiBold", 20F, FontStyle.Bold);
-            Label_Welcome.ForeColor = Color.FromArgb(40, 70, 220);
-            Label_Welcome.Location = new Point(902, 118);
-            Label_Welcome.Name = "Label_Welcome";
-            Label_Welcome.Size = new Size(525, 75);
-            Label_Welcome.TabIndex = 4;
-            Label_Welcome.Text = "С возвращением";
-            Label_Welcome.TextAlign = ContentAlignment.MiddleCenter;
+            Label_WelcomeBack.AutoSize = true;
+            Label_WelcomeBack.Font = new Font("Montserrat SemiBold", 20F, FontStyle.Bold);
+            Label_WelcomeBack.ForeColor = Color.FromArgb(40, 70, 220);
+            Label_WelcomeBack.Location = new Point(902, 118);
+            Label_WelcomeBack.Name = "Label_WelcomeBack";
+            Label_WelcomeBack.Size = new Size(525, 75);
+            Label_WelcomeBack.TabIndex = 4;
+            Label_WelcomeBack.Text = "С возвращением";
+            Label_WelcomeBack.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // TextBox_Login
             // 
@@ -219,10 +220,11 @@
             Controls.Add(Button_Enter);
             Controls.Add(TextBox_Password);
             Controls.Add(TextBox_Login);
-            Controls.Add(Label_Welcome);
+            Controls.Add(Label_WelcomeBack);
             Controls.Add(Panel_TopControlBox);
             Controls.Add(PictureBox_MainPicture);
             FormBorderStyle = FormBorderStyle.None;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "EntryForm";
             StartPosition = FormStartPosition.CenterScreen;
             Tag = "Entry";
@@ -239,7 +241,7 @@
         private Guna.UI2.WinForms.Guna2ControlBox Button_Exit;
         private Panel Panel_TopControlBox;
         private Guna.UI2.WinForms.Guna2PictureBox PictureBox_MainPicture;
-        private Label Label_Welcome;
+        private Label Label_WelcomeBack;
         private Guna.UI2.WinForms.Guna2TextBox TextBox_Login;
         private Guna.UI2.WinForms.Guna2TextBox TextBox_Password;
         private Guna.UI2.WinForms.Guna2GradientButton Button_Enter;
