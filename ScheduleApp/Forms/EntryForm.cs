@@ -1,9 +1,9 @@
 ﻿using Guna.UI2.WinForms;
 using System.Net.Mail;
-using System.Text.RegularExpressions;
 
 namespace ScheduleApp {
-    public partial class EntryForm : Form {
+    public partial class EntryForm : Form
+    {
         private static EntryForm? _entryForm;
         public static EntryForm GetEntryForm() {
             return _entryForm ??= new EntryForm();
@@ -39,28 +39,20 @@ namespace ScheduleApp {
                 return true;
             }
             catch {
-                return false; 
+                return false;
             }
         }
 
         private bool PasswordIsInvalid(string password) {
-            return !( string.IsNullOrEmpty(password) ) && password.Length < 8;
+            return !(string.IsNullOrEmpty(password)) && password.Length < 8;
         }
 
         private void EmptyData(Guna2TextBox textBox) {
-            int repeatCount = 5;
-            var color = textBox.PlaceholderForeColor;
-            for (int blueStep = 0; blueStep < repeatCount; blueStep++) {
-                Task.Delay(75).Wait();
-                SetColor(textBox, Color.Red);
-                Task.Delay(75).Wait();
-                SetColor(textBox, color);
-            }
+            StylesAndAnimations.ErrorTextBoxFlashing(textBox);
         }
 
-        private void SetColor(Guna2TextBox textBox, Color color) {
-            textBox.BorderColor = color;
-            textBox.PlaceholderForeColor = color;
+        private void PictureBox_MainPicture_Click(object sender, EventArgs e) {
+            MessageBox.Show("ПасхалОчка\nВ очко себе тыкни блять }:(", "☑️Certified Gay");
         }
     }
 }

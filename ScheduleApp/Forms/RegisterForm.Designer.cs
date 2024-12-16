@@ -63,6 +63,9 @@
             PictureBox_MainPicture = new Guna.UI2.WinForms.Guna2PictureBox();
             TextBox_RepeatPswrd = new Guna.UI2.WinForms.Guna2TextBox();
             Panel_FirstStepOfReg = new Panel();
+            Label_IncorrectLogin = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            Label_IncorrectPassword = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            Label_PswrdDoesntMatch = new Guna.UI2.WinForms.Guna2HtmlLabel();
             Label_TipFieldFilling = new Label();
             Panel_SecondStepOfReg = new Panel();
             Button_Back = new Guna.UI2.WinForms.Guna2GradientButton();
@@ -71,6 +74,7 @@
             TextBox_Name = new Guna.UI2.WinForms.Guna2TextBox();
             TextBox_Surname = new Guna.UI2.WinForms.Guna2TextBox();
             Button_Register = new Guna.UI2.WinForms.Guna2GradientButton();
+            ToolTipForPassword = new Guna.UI2.WinForms.Guna2HtmlToolTip();
             Panel_TopControlBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)PictureBox_MainPicture).BeginInit();
             Panel_FirstStepOfReg.SuspendLayout();
@@ -143,7 +147,7 @@
             Button_Next.Size = new Size(393, 90);
             Button_Next.TabIndex = 10;
             Button_Next.Text = "Далее";
-            Button_Next.Click += Button_Next_Click;
+            Button_Next.Click += Button_NextOrBack_Click;
             // 
             // TextBox_Password
             // 
@@ -169,13 +173,16 @@
             TextBox_Password.Margin = new Padding(8);
             TextBox_Password.MaxLength = 30;
             TextBox_Password.Name = "TextBox_Password";
-            TextBox_Password.PasswordChar = '\0';
+            TextBox_Password.PasswordChar = '*';
             TextBox_Password.PlaceholderForeColor = Color.FromArgb(40, 70, 220);
             TextBox_Password.PlaceholderText = "* Пароль";
             TextBox_Password.SelectedText = "";
             TextBox_Password.ShadowDecoration.CustomizableEdges = customizableEdges8;
             TextBox_Password.Size = new Size(525, 90);
             TextBox_Password.TabIndex = 9;
+            TextBox_Password.Tag = "password";
+            TextBox_Password.Enter += TextBox_Enter;
+            TextBox_Password.Leave += TextBox_Password_Leave;
             // 
             // TextBox_Login
             // 
@@ -208,6 +215,9 @@
             TextBox_Login.ShadowDecoration.CustomizableEdges = customizableEdges10;
             TextBox_Login.Size = new Size(525, 90);
             TextBox_Login.TabIndex = 8;
+            TextBox_Login.Tag = "login";
+            TextBox_Login.Enter += TextBox_Enter;
+            TextBox_Login.Leave += TextBox_Login_Leave;
             // 
             // Label_Registration
             // 
@@ -259,16 +269,22 @@
             TextBox_RepeatPswrd.Margin = new Padding(8);
             TextBox_RepeatPswrd.MaxLength = 30;
             TextBox_RepeatPswrd.Name = "TextBox_RepeatPswrd";
-            TextBox_RepeatPswrd.PasswordChar = '\0';
+            TextBox_RepeatPswrd.PasswordChar = '*';
             TextBox_RepeatPswrd.PlaceholderForeColor = Color.FromArgb(40, 70, 220);
             TextBox_RepeatPswrd.PlaceholderText = "* Повторите пароль";
             TextBox_RepeatPswrd.SelectedText = "";
             TextBox_RepeatPswrd.ShadowDecoration.CustomizableEdges = customizableEdges14;
             TextBox_RepeatPswrd.Size = new Size(525, 90);
             TextBox_RepeatPswrd.TabIndex = 13;
+            TextBox_RepeatPswrd.Tag = "repeatPassword";
+            TextBox_RepeatPswrd.Enter += TextBox_Enter;
+            TextBox_RepeatPswrd.Leave += TextBox_RepeatPswrd_Leave;
             // 
             // Panel_FirstStepOfReg
             // 
+            Panel_FirstStepOfReg.Controls.Add(Label_IncorrectLogin);
+            Panel_FirstStepOfReg.Controls.Add(Label_IncorrectPassword);
+            Panel_FirstStepOfReg.Controls.Add(Label_PswrdDoesntMatch);
             Panel_FirstStepOfReg.Controls.Add(Label_TipFieldFilling);
             Panel_FirstStepOfReg.Controls.Add(TextBox_RepeatPswrd);
             Panel_FirstStepOfReg.Controls.Add(TextBox_Password);
@@ -279,13 +295,53 @@
             Panel_FirstStepOfReg.Size = new Size(583, 608);
             Panel_FirstStepOfReg.TabIndex = 14;
             // 
+            // Label_IncorrectLogin
+            // 
+            Label_IncorrectLogin.BackColor = Color.FromArgb(30, 30, 30);
+            Label_IncorrectLogin.Font = new Font("Montserrat", 9F);
+            Label_IncorrectLogin.ForeColor = Color.Red;
+            Label_IncorrectLogin.Location = new Point(80, 18);
+            Label_IncorrectLogin.Name = "Label_IncorrectLogin";
+            Label_IncorrectLogin.Size = new Size(406, 35);
+            Label_IncorrectLogin.TabIndex = 22;
+            Label_IncorrectLogin.Tag = "";
+            Label_IncorrectLogin.Text = "Не соответствие формату почты";
+            Label_IncorrectLogin.Visible = false;
+            // 
+            // Label_IncorrectPassword
+            // 
+            Label_IncorrectPassword.BackColor = Color.FromArgb(30, 30, 30);
+            Label_IncorrectPassword.Font = new Font("Montserrat", 9F);
+            Label_IncorrectPassword.ForeColor = Color.Red;
+            Label_IncorrectPassword.Location = new Point(80, 158);
+            Label_IncorrectPassword.Name = "Label_IncorrectPassword";
+            Label_IncorrectPassword.Size = new Size(422, 35);
+            Label_IncorrectPassword.TabIndex = 21;
+            Label_IncorrectPassword.Tag = "";
+            Label_IncorrectPassword.Text = "Не соответствие формату пароля";
+            Label_IncorrectPassword.Visible = false;
+            // 
+            // Label_PswrdDoesntMatch
+            // 
+            Label_PswrdDoesntMatch.BackColor = Color.FromArgb(30, 30, 30);
+            Label_PswrdDoesntMatch.Font = new Font("Montserrat", 9F);
+            Label_PswrdDoesntMatch.ForeColor = Color.Red;
+            Label_PswrdDoesntMatch.Location = new Point(80, 296);
+            Label_PswrdDoesntMatch.Name = "Label_PswrdDoesntMatch";
+            Label_PswrdDoesntMatch.Size = new Size(279, 35);
+            Label_PswrdDoesntMatch.TabIndex = 20;
+            Label_PswrdDoesntMatch.Tag = "";
+            Label_PswrdDoesntMatch.Text = "Пароли не совпадают";
+            Label_PswrdDoesntMatch.Visible = false;
+            // 
             // Label_TipFieldFilling
             // 
             Label_TipFieldFilling.AutoSize = true;
+            Label_TipFieldFilling.Font = new Font("Montserrat", 9F);
             Label_TipFieldFilling.ForeColor = Color.FromArgb(30, 60, 150);
             Label_TipFieldFilling.Location = new Point(40, 410);
             Label_TipFieldFilling.Name = "Label_TipFieldFilling";
-            Label_TipFieldFilling.Size = new Size(263, 32);
+            Label_TipFieldFilling.Size = new Size(289, 33);
             Label_TipFieldFilling.TabIndex = 19;
             Label_TipFieldFilling.Text = "* - обязательные поля";
             // 
@@ -324,7 +380,7 @@
             Button_Back.ShadowDecoration.CustomizableEdges = customizableEdges16;
             Button_Back.Size = new Size(96, 90);
             Button_Back.TabIndex = 19;
-            Button_Back.Click += Button_Back_Click;
+            Button_Back.Click += Button_NextOrBack_Click;
             // 
             // Label_TipFieldFilling1
             // 
@@ -366,6 +422,8 @@
             TextBox_Patronymic.ShadowDecoration.CustomizableEdges = customizableEdges18;
             TextBox_Patronymic.Size = new Size(525, 90);
             TextBox_Patronymic.TabIndex = 17;
+            TextBox_Patronymic.Enter += TextBox_Enter;
+            TextBox_Patronymic.Leave += TextBox_Patronymic_Leave;
             // 
             // TextBox_Name
             // 
@@ -397,6 +455,8 @@
             TextBox_Name.ShadowDecoration.CustomizableEdges = customizableEdges20;
             TextBox_Name.Size = new Size(525, 90);
             TextBox_Name.TabIndex = 15;
+            TextBox_Name.Enter += TextBox_Enter;
+            TextBox_Name.Leave += TextBox_PersonData_Leave;
             // 
             // TextBox_Surname
             // 
@@ -428,6 +488,8 @@
             TextBox_Surname.ShadowDecoration.CustomizableEdges = customizableEdges22;
             TextBox_Surname.Size = new Size(525, 90);
             TextBox_Surname.TabIndex = 14;
+            TextBox_Surname.Enter += TextBox_Enter;
+            TextBox_Surname.Leave += TextBox_PersonData_Leave;
             // 
             // Button_Register
             // 
@@ -450,6 +512,17 @@
             Button_Register.Size = new Size(423, 90);
             Button_Register.TabIndex = 16;
             Button_Register.Text = "Создать аккаунт";
+            Button_Register.Click += Button_Register_Click;
+            // 
+            // ToolTipForPassword
+            // 
+            ToolTipForPassword.AllowLinksHandling = true;
+            ToolTipForPassword.BackColor = Color.FromArgb(30, 30, 30);
+            ToolTipForPassword.BorderColor = Color.FromArgb(30, 60, 150);
+            ToolTipForPassword.ForeColor = Color.FromArgb(30, 60, 150);
+            ToolTipForPassword.MaximumSize = new Size(0, 0);
+            ToolTipForPassword.TitleFont = new Font("Montserrat", 8.999999F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            ToolTipForPassword.TitleForeColor = Color.FromArgb(30, 60, 150);
             // 
             // RegisterForm
             // 
@@ -460,8 +533,8 @@
             Controls.Add(Panel_TopControlBox);
             Controls.Add(Label_Registration);
             Controls.Add(PictureBox_MainPicture);
-            Controls.Add(Panel_SecondStepOfReg);
             Controls.Add(Panel_FirstStepOfReg);
+            Controls.Add(Panel_SecondStepOfReg);
             FormBorderStyle = FormBorderStyle.None;
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "RegisterForm";
@@ -498,5 +571,9 @@
         private Label Label_TipFieldFilling;
         private Label Label_TipFieldFilling1;
         private Guna.UI2.WinForms.Guna2GradientButton Button_Back;
+        private Guna.UI2.WinForms.Guna2HtmlToolTip ToolTipForPassword;
+        private Guna.UI2.WinForms.Guna2HtmlLabel Label_PswrdDoesntMatch;
+        private Guna.UI2.WinForms.Guna2HtmlLabel Label_IncorrectPassword;
+        private Guna.UI2.WinForms.Guna2HtmlLabel Label_IncorrectLogin;
     }
 }

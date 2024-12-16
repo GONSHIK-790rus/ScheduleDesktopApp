@@ -7,20 +7,20 @@
       "RelativeMoniker": "D:0:0:{110CD0FD-E2EB-46A5-9E26-E3835CA3344E}|ScheduleApp\\ScheduleApp.csproj|solutionrelative:scheduleapp\\forms\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{110CD0FD-E2EB-46A5-9E26-E3835CA3344E}|ScheduleApp\\ScheduleApp.csproj|c:\\users\\redmi\\source\\repos\\scheduleapp\\scheduleapp\\forms\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{110CD0FD-E2EB-46A5-9E26-E3835CA3344E}|ScheduleApp\\ScheduleApp.csproj|C:\\Users\\Redmi\\source\\repos\\ScheduleApp\\scheduleapp\\forms\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{110CD0FD-E2EB-46A5-9E26-E3835CA3344E}|ScheduleApp\\ScheduleApp.csproj|solutionrelative:scheduleapp\\forms\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{110CD0FD-E2EB-46A5-9E26-E3835CA3344E}|ScheduleApp\\ScheduleApp.csproj|c:\\users\\redmi\\source\\repos\\scheduleapp\\scheduleapp\\forms\\registerform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{110CD0FD-E2EB-46A5-9E26-E3835CA3344E}|ScheduleApp\\ScheduleApp.csproj|solutionrelative:scheduleapp\\forms\\registerform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{110CD0FD-E2EB-46A5-9E26-E3835CA3344E}|ScheduleApp\\ScheduleApp.csproj|c:\\users\\redmi\\source\\repos\\scheduleapp\\scheduleapp\\user\\usercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{110CD0FD-E2EB-46A5-9E26-E3835CA3344E}|ScheduleApp\\ScheduleApp.csproj|solutionrelative:scheduleapp\\user\\usercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{110CD0FD-E2EB-46A5-9E26-E3835CA3344E}|ScheduleApp\\ScheduleApp.csproj|c:\\users\\redmi\\source\\repos\\scheduleapp\\scheduleapp\\forms\\entryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{110CD0FD-E2EB-46A5-9E26-E3835CA3344E}|ScheduleApp\\ScheduleApp.csproj|solutionrelative:scheduleapp\\forms\\entryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{110CD0FD-E2EB-46A5-9E26-E3835CA3344E}|ScheduleApp\\ScheduleApp.csproj|c:\\users\\redmi\\source\\repos\\scheduleapp\\scheduleapp\\user\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{110CD0FD-E2EB-46A5-9E26-E3835CA3344E}|ScheduleApp\\ScheduleApp.csproj|solutionrelative:scheduleapp\\user\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{110CD0FD-E2EB-46A5-9E26-E3835CA3344E}|ScheduleApp\\ScheduleApp.csproj|c:\\users\\redmi\\source\\repos\\scheduleapp\\scheduleapp\\forms\\entryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{110CD0FD-E2EB-46A5-9E26-E3835CA3344E}|ScheduleApp\\ScheduleApp.csproj|solutionrelative:scheduleapp\\forms\\entryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{110CD0FD-E2EB-46A5-9E26-E3835CA3344E}|ScheduleApp\\ScheduleApp.csproj|c:\\users\\redmi\\source\\repos\\scheduleapp\\scheduleapp\\captcha\\captcha.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{110CD0FD-E2EB-46A5-9E26-E3835CA3344E}|ScheduleApp\\ScheduleApp.csproj|solutionrelative:scheduleapp\\captcha\\captcha.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,61 +30,20 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "EntryForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "DocumentMoniker": "C:\\Users\\Redmi\\source\\repos\\ScheduleApp\\ScheduleApp\\Forms\\EntryForm.cs",
-              "RelativeDocumentMoniker": "ScheduleApp\\Forms\\EntryForm.cs",
-              "ToolTip": "C:\\Users\\Redmi\\source\\repos\\ScheduleApp\\ScheduleApp\\Forms\\EntryForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "RelativeToolTip": "ScheduleApp\\Forms\\EntryForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-12T20:11:23.484Z",
-              "IsPinned": true,
-              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "EntryForm.cs",
-              "DocumentMoniker": "C:\\Users\\Redmi\\source\\repos\\ScheduleApp\\ScheduleApp\\Forms\\EntryForm.cs",
-              "RelativeDocumentMoniker": "ScheduleApp\\Forms\\EntryForm.cs",
-              "ToolTip": "C:\\Users\\Redmi\\source\\repos\\ScheduleApp\\ScheduleApp\\Forms\\EntryForm.cs",
-              "RelativeToolTip": "ScheduleApp\\Forms\\EntryForm.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAmwBgAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-12T19:46:42.117Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "RegisterForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "DocumentMoniker": "C:\\Users\\Redmi\\source\\repos\\ScheduleApp\\ScheduleApp\\Forms\\RegisterForm.cs",
               "RelativeDocumentMoniker": "ScheduleApp\\Forms\\RegisterForm.cs",
-              "ToolTip": "C:\\Users\\Redmi\\source\\repos\\ScheduleApp\\ScheduleApp\\Forms\\RegisterForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]*",
-              "RelativeToolTip": "ScheduleApp\\Forms\\RegisterForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]*",
+              "ToolTip": "C:\\Users\\Redmi\\source\\repos\\ScheduleApp\\ScheduleApp\\Forms\\RegisterForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "ScheduleApp\\Forms\\RegisterForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T08:42:38.09Z",
+              "WhenOpened": "2024-12-14T18:57:02.927Z",
               "IsPinned": true,
               "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "RegisterForm.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\Redmi\\source\\repos\\ScheduleApp\\ScheduleApp\\Forms\\RegisterForm.Designer.cs",
-              "RelativeDocumentMoniker": "ScheduleApp\\Forms\\RegisterForm.Designer.cs",
-              "ToolTip": "C:\\Users\\Redmi\\source\\repos\\ScheduleApp\\ScheduleApp\\Forms\\RegisterForm.Designer.cs",
-              "RelativeToolTip": "ScheduleApp\\Forms\\RegisterForm.Designer.cs",
-              "ViewState": "AgIAAAQBAAAAAAAAAAAAABgBAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T09:11:32.892Z",
-              "IsPinned": true,
-              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -92,11 +51,11 @@
               "Title": "RegisterForm.cs",
               "DocumentMoniker": "C:\\Users\\Redmi\\source\\repos\\ScheduleApp\\ScheduleApp\\Forms\\RegisterForm.cs",
               "RelativeDocumentMoniker": "ScheduleApp\\Forms\\RegisterForm.cs",
-              "ToolTip": "C:\\Users\\Redmi\\source\\repos\\ScheduleApp\\ScheduleApp\\Forms\\RegisterForm.cs*",
-              "RelativeToolTip": "ScheduleApp\\Forms\\RegisterForm.cs*",
-              "ViewState": "AgIAAAYAAAAAAAAAAAA6wBgAAAAhAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Redmi\\source\\repos\\ScheduleApp\\ScheduleApp\\Forms\\RegisterForm.cs",
+              "RelativeToolTip": "ScheduleApp\\Forms\\RegisterForm.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAmwBkAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T07:32:45.138Z",
+              "WhenOpened": "2024-12-13T20:01:18.354Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
@@ -115,6 +74,45 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserContext.cs",
+              "DocumentMoniker": "C:\\Users\\Redmi\\source\\repos\\ScheduleApp\\ScheduleApp\\User\\UserContext.cs",
+              "RelativeDocumentMoniker": "ScheduleApp\\User\\UserContext.cs",
+              "ToolTip": "C:\\Users\\Redmi\\source\\repos\\ScheduleApp\\ScheduleApp\\User\\UserContext.cs",
+              "RelativeToolTip": "ScheduleApp\\User\\UserContext.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBIAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T09:57:43.454Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\Redmi\\source\\repos\\ScheduleApp\\ScheduleApp\\User\\User.cs",
+              "RelativeDocumentMoniker": "ScheduleApp\\User\\User.cs",
+              "ToolTip": "C:\\Users\\Redmi\\source\\repos\\ScheduleApp\\ScheduleApp\\User\\User.cs",
+              "RelativeToolTip": "ScheduleApp\\User\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAIAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-15T18:00:09.796Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Captcha.cs",
+              "DocumentMoniker": "C:\\Users\\Redmi\\source\\repos\\ScheduleApp\\ScheduleApp\\Captcha\\Captcha.cs",
+              "RelativeDocumentMoniker": "ScheduleApp\\Captcha\\Captcha.cs",
+              "ToolTip": "C:\\Users\\Redmi\\source\\repos\\ScheduleApp\\ScheduleApp\\Captcha\\Captcha.cs",
+              "RelativeToolTip": "ScheduleApp\\Captcha\\Captcha.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-15T17:29:56.686Z",
+              "EditorCaption": ""
             }
           ]
         },

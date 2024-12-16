@@ -19,6 +19,8 @@ namespace ScheduleApp {
 
         private List<Form> _formsList = [];
         private void FillFormsList() {
+            if (_mainForm != null)
+                _formsList.Add( _mainForm );
             _formsList.Add( EntryForm.GetEntryForm() );
             _formsList.Add( RegisterForm.GetRegisterForm() );
         }

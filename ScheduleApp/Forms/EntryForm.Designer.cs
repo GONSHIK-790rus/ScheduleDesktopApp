@@ -111,6 +111,7 @@
             PictureBox_MainPicture.SizeMode = PictureBoxSizeMode.StretchImage;
             PictureBox_MainPicture.TabIndex = 3;
             PictureBox_MainPicture.TabStop = false;
+            PictureBox_MainPicture.Click += PictureBox_MainPicture_Click;
             // 
             // Label_WelcomeBack
             // 
@@ -180,7 +181,7 @@
             TextBox_Password.Margin = new Padding(8);
             TextBox_Password.MaxLength = 30;
             TextBox_Password.Name = "TextBox_Password";
-            TextBox_Password.PasswordChar = '\0';
+            TextBox_Password.PasswordChar = '*';
             TextBox_Password.PlaceholderForeColor = Color.FromArgb(40, 70, 220);
             TextBox_Password.PlaceholderText = "Пароль";
             TextBox_Password.SelectedText = "";
